@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1E40AF;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="swordGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D97706;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gemGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="30" fill="#1F2937" stroke="#374151" stroke-width="2"/>
+  
+  <!-- Shield base -->
+  <path d="M32 8 L24 12 L24 28 C24 36 28 42 32 44 C36 42 40 36 40 28 L40 12 Z" fill="url(#shieldGrad)" stroke="#1E40AF" stroke-width="1"/>
+  
+  <!-- Shield highlight -->
+  <path d="M32 10 L26 13 L26 27 C26 33 29 37 32 39 C35 37 38 33 38 27 L38 13 Z" fill="#60A5FA" opacity="0.3"/>
+  
+  <!-- Sword -->
+  <rect x="30" y="16" width="4" height="20" fill="url(#swordGrad)" rx="1"/>
+  <rect x="28" y="34" width="8" height="3" fill="url(#swordGrad)" rx="1"/>
+  <rect x="29" y="37" width="6" height="2" fill="#92400E" rx="1"/>
+  
+  <!-- Gems/Stats indicators -->
+  <circle cx="20" cy="20" r="3" fill="url(#gemGrad)" stroke="#047857" stroke-width="1"/>
+  <circle cx="44" cy="20" r="3" fill="#EF4444" stroke="#DC2626" stroke-width="1"/>
+  <circle cx="20" cy="44" r="3" fill="#8B5CF6" stroke="#7C3AED" stroke-width="1"/>
+  <circle cx="44" cy="44" r="3" fill="#F59E0B" stroke="#D97706" stroke-width="1"/>
+  
+  <!-- Sparkle effects -->
+  <g fill="#FBBF24" opacity="0.8">
+    <polygon points="16,16 17,18 19,17 17,19 16,21 15,19 13,17 15,18" transform="scale(0.5)"/>
+    <polygon points="48,16 49,18 51,17 49,19 48,21 47,19 45,17 47,18" transform="scale(0.5)"/>
+    <polygon points="16,48 17,50 19,49 17,51 16,53 15,51 13,49 15,50" transform="scale(0.5)"/>
+    <polygon points="48,48 49,50 51,49 49,51 48,53 47,51 45,49 47,50" transform="scale(0.5)"/>
+  </g>
+</svg>
